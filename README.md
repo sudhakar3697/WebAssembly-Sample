@@ -35,10 +35,15 @@ admin@admin-Virtual-Machine:/example$ emcc test.c -o test.js -s WASM=1 -s NO_EXI
 
 admin@admin-Virtual-Machine:/example$ ls
 
-test.c  test.js  test.wasm
+test.c 
+
+test.js 
+
+test.wasm
+
 admin@admin-Virtual-Machine:~/example$ gedit index.html [take index.html from this repo]
 
 
 Refer https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm for after installation steps.
 
-Just run index.html and see the result. [firefox, edge prefered to run locally. chrome cors prevents local file access]
+Just run <b>index.html</b> and see the result. [firefox, edge prefered to run locally. chrome CORS prevents local system file access]
