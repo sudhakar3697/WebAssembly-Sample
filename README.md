@@ -1,4 +1,4 @@
-<pre>
+
 # WebAssembly-Sample
 
 Compiler setup
@@ -39,5 +39,3 @@ admin@admin-Virtual-Machine:~/example$ gedit index.html [take index.html from th
 Refer https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm for after installation steps.
 
 Just run index.html and see the result. [firefox, edge prefered to run locally. chrome cors prevents local file access]
-
-</pre>
