@@ -8,7 +8,8 @@
 <script async type="text/javascript" src="test.js"></script>
 <script>
 function callDoubleIt(){
-var x=Module.ccall("doubleIt","number",["number"],[20]);
+ // Module is defined in test.js 
+var x=Module.ccall("doubleIt","number",["number"],[20]); // func name, return type, arguments' type, arguments value.
 alert(x);
 }
 </script>
