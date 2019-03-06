@@ -3,7 +3,7 @@
 
 Compiler setup
 --------------
-[I am using ubuntu (prefered) for compiling]
+[I am using ubuntu 18.04 vm  (prefered) for compiling]
 
 Set up the WebAssembly compiler (emscripten) using  https://webassembly.org/getting-started/developers-guide/
 
