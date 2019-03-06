@@ -3,10 +3,16 @@
 
 Compiler setup
 --------------
+[I am using ubuntu (prefered) for compiling]
 
 Set up the WebAssembly compiler (emscripten) using  https://webassembly.org/getting-started/developers-guide/
 
-[I am using ubuntu for compiling]
+<pre>
+$ git clone https://github.com/juj/emsdk.git
+$ cd emsdk
+$ ./emsdk install --build=Release sdk-incoming-64bit binaryen-master-64bit
+$ ./emsdk activate --build=Release sdk-incoming-64bit binaryen-master-64bit
+</pre>
 
 start the terminal
 
@@ -20,10 +26,11 @@ Setting environment variables:
 EMSDK = /home/admin/emsdk
 
 admin@admin-Virtual-Machine:~/emsdk$ cd ..
+admin@admin-Virtual-Machine:~/emsdk$ mkdir example
 admin@admin-Virtual-Machine:~/$ cd example [this directory has the c/c++ code to be compiled into WebAssembly]
+admin@admin-Virtual-Machine:~/example$ gedit test.c [take test.c from this repo]
 admin@admin-Virtual-Machine:~/example$ ls
-
-test.c [take test.c from this repo]
+test.c
 </pre>
 
 Compile to WASM
@@ -40,8 +47,11 @@ admin@admin-Virtual-Machine:~/example$ emcc test.c -o test.js -s WASM=1 -s NO_EX
 <pre>admin@admin-Virtual-Machine:~/example$ ls
 
 test.c 
-test.js 
-test.wasm
+test.js [generated]
+test.wasm [generated]
+
+Using WASM files in Javascript
+-------------------------------
 
 admin@admin-Virtual-Machine:~/example$ gedit index.html [take index.html from this repo]
 
