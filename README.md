@@ -26,7 +26,7 @@ test.c [take test.c from this repo]
 Compile to WASM
 ---------------
 
-admin@admin-Virtual-Machine:~/example$ emcc test.c -o test.js -s WASM=1 -s NO_EXIT_RUNTIME=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall"]'
+admin@admin-Virtual-Machine:/example$ emcc test.c -o test.js -s WASM=1 -s NO_EXIT_RUNTIME=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall"]'
 
 input: test.c
 
