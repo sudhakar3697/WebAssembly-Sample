@@ -33,13 +33,12 @@ admin@admin-Virtual-Machine:/example$ emcc test.c -o test.js -s WASM=1 -s NO_EXI
 
 <b>output</b>: test.js, test.wasm
 
-admin@admin-Virtual-Machine:/example$ ls
+<pre>admin@admin-Virtual-Machine:~/example$ ls
 
 test.c 
-
 test.js 
-
 test.wasm
+</pre>
 
 admin@admin-Virtual-Machine:~/example$ gedit index.html [take index.html from this repo]
 
