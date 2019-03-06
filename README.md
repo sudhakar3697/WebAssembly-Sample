@@ -1,3 +1,4 @@
+<pre>
 # WebAssembly-Sample
 
 Compiler setup
@@ -36,3 +37,4 @@ admin@admin-Virtual-Machine:~/example$ gedit index.html [take index.html from th
 
 
 Refer https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm for after installation steps.
+</pre>
