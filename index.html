@@ -14,28 +14,3 @@ alert(x);
 </script>
 </body>
 </html>
-
-<!--
-
-https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm
-
-admin@admin-Virtual-Machine:~$
-admin@admin-Virtual-Machine:~$ cd emsdk/                 
-admin@admin-Virtual-Machine:~/emsdk$ source ./emsdk_env.sh --build=Release
-Setting environment variables:
-EMSDK = /home/admin/emsdk
-
-admin@admin-Virtual-Machine:~/emsdk$ cd ..
-admin@admin-Virtual-Machine:~$ cd suda
-admin@admin-Virtual-Machine:~/suda$ ls
-test.c
-
-admin@admin-Virtual-Machine:~/suda$ emcc test.c -o test.js -s WASM=1 -s NO_EXIT_RUNTIME=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall"]'
-
-admin@admin-Virtual-Machine:~/suda$ ls
-test.c  test.js  test.wasm
-admin@admin-Virtual-Machine:~/suda$ gedit index.html
-
-
-
--->
