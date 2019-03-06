@@ -12,7 +12,7 @@ admin@admin-Virtual-Machine:~$
 Environment setup after installation (non Windows 7 installs)
 -------------------------------------------------------------
 
-admin@admin-Virtual-Machine:~$ cd emsdk                 
+admin@admin-Virtual-Machine:$ cd emsdk                 
 admin@admin-Virtual-Machine:~/emsdk$ source ./emsdk_env.sh --build=Release
 
 Setting environment variables:
