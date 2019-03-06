@@ -20,7 +20,8 @@ EMSDK = /home/admin/emsdk
 
 admin@admin-Virtual-Machine:~/emsdk$ cd ..
 admin@admin-Virtual-Machine:~$ cd example
-admin@admin-Virtual-Machine:~/example$ ls
+admin@admin-Virtual-Machine:/example$ ls
+
 test.c [take test.c from this repo]
 
 Compile to WASM
