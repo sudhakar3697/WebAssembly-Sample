@@ -18,8 +18,8 @@ admin@admin-Virtual-Machine:~/emsdk$ source ./emsdk_env.sh --build=Release
 Setting environment variables:
 EMSDK = /home/admin/emsdk
 
-admin@admin-Virtual-Machine:~/emsdk$ cd ..
-admin@admin-Virtual-Machine:~$ cd example
+admin@admin-Virtual-Machine:/emsdk$ cd ..
+admin@admin-Virtual-Machine:/$ cd example
 admin@admin-Virtual-Machine:/example$ ls
 
 test.c [take test.c from this repo]
