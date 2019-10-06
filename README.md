@@ -1,6 +1,8 @@
 
 # WebAssembly-Sample
 
+# 1. Using Emscripten
+
 Compiler setup
 --------------
 [I am using ubuntu 18.04 vm  (prefered) for compiling]
@@ -60,3 +62,28 @@ admin@admin-Virtual-Machine:~/example$ gedit index.html [take index.html from th
 Refer https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm for after installation steps.
 
 Just run <b>index.html</b> and see the result. [firefox, edge prefered to run locally. chrome CORS prevents local system file access]
+
+# 2. Using https://wasdk.github.io/WasmFiddle/
+
+* Go to https://wasdk.github.io/WasmFiddle/
+* Type the C function
+<code>
+int square(a) { 
+  return a*a;
+}
+</code>
+* Build
+* Download wasm
+
+* create an html file 'square_usage.html'
+<code>
+<script>
+WebAssembly.instantiateStreaming(fetch('square.wasm'))
+      .then(obj => {
+         console.log(obj.instance.exports.square(5));
+      });
+</script>
+</code>
+* Run with a local web server (Required due to fetch API-CORS)
+
+* For Refer: https://stackoverflow.com/a/58256067/12167785
