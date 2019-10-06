@@ -86,4 +86,5 @@ WebAssembly.instantiateStreaming(fetch('square.wasm'))
 ```
 * Run with a local web server (Required due to fetch API-CORS)
 
-* For Refer: https://stackoverflow.com/a/58256067/12167785
+
+For Refer: https://stackoverflow.com/a/58256067/12167785
