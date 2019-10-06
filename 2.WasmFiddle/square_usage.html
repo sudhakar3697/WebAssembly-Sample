@@ -1,0 +1,6 @@
+<script>
+WebAssembly.instantiateStreaming(fetch('square.wasm'))
+      .then(obj => {
+         console.log(obj.instance.exports.square(5));
+      });
+</script>
