@@ -67,23 +67,23 @@ Just run <b>index.html</b> and see the result. [firefox, edge prefered to run lo
 
 * Go to https://wasdk.github.io/WasmFiddle/
 * Type the C function
-<code>
+```
 int square(a) { 
   return a*a;
 }
-</code>
+```
 * Build
 * Download wasm
 
 * create an html file 'square_usage.html'
-<code>
+```
 <script>
 WebAssembly.instantiateStreaming(fetch('square.wasm'))
       .then(obj => {
          console.log(obj.instance.exports.square(5));
       });
 </script>
-</code>
+```
 * Run with a local web server (Required due to fetch API-CORS)
 
 * For Refer: https://stackoverflow.com/a/58256067/12167785
