@@ -88,3 +88,9 @@ WebAssembly.instantiateStreaming(fetch('square.wasm'))
 
 
 For Refer: https://stackoverflow.com/a/58256067/12167785
+
+# 3. Using WASM in Node.js
+
+* Run
+
+node --experimental-modules --experimental-wasm-modules simplemath.mjs
