@@ -96,3 +96,5 @@ For Refer: https://stackoverflow.com/a/58256067/12167785
 ```
 node --experimental-modules --experimental-wasm-modules simplemath.mjs
 ```
+
+<embed src="WebAssembly-Intro.pdf" width="800px" height="2100px" />
